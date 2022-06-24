@@ -1,9 +1,6 @@
 package com.example.messenger.servises;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,7 +19,7 @@ public class MainService {
     }
 
     @PostMapping("/addToChat")
-    String addToChat(@RequestParam ("message") String newMessege) {
+    String addToChat(@RequestParam("message") String newMessege) {
         if (newMessege.equals(MESSAGE_FOR_CHAT_CLEANING)) {
             cleanChatFile();
         } else {
