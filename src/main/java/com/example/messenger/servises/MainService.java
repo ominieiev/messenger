@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 public class MainService {
     private static final String PATH_TO_FILE = "./src/main/resources/static/holder.txt";
     private static final String MESSAGE_FOR_CHAT_CLEANING = "66f561bb666f561bb6bn837nggfddsgjkkrrtyesfdg2b68372213e00fbf4a2cd6519e0cfcb";
-    private static final String MESSAGE_DELIMITER = "&&##$$";
+    private static final String MESSAGE_DELIMITER = "&&##!!";
 
     @GetMapping("/getChat")
     String getChat() {
