@@ -22,7 +22,7 @@ public class MainService {
     }
 
     @PostMapping("/addToChat")
-    String addToChat(@RequestBody String newMessege) {
+    String addToChat(@RequestParam ("message") String newMessege) {
         if (newMessege.equals(MESSAGE_FOR_CHAT_CLEANING)) {
             cleanChatFile();
         } else {
